@@ -1,0 +1,79 @@
+:root {
+    --green: rgb(0, 204, 0);
+}
+
+
+body {
+    background-color: #0f0f23;
+    color: #cccccc;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+h1.site-title a {
+    text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+}
+
+a::before { content: "["; }
+a::after { content: "]"; }
+
+a.article-title::before { content: ""; }
+a.article-title::after { content: ""; }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#MainHeaderGroup {
+    text-align: center;
+}
+
+nav ul li {
+    padding: 2px 5px;
+}
+
+nav#MainNav li a {
+    font-size: 1.6em;
+}
+
+article.article-list-item {
+    padding-bottom: 20px;
+}
+
+pre > code {
+    background-color: black;
+}
+
+#SiteFooter {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-height: 75vh;
+}
+
+p.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+p.tags a {
+    padding: 2px 5px;
+}

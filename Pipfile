@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+dev = "pelican --listen --autoreload"
+list-themes = "pelican-themes -l"
+reload-theme = "pelican-themes -U theme/j1"
+
+[packages]
+pelican = {extras = ["markdown"], version = "*"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    {% block content_title %}<h2>Home</h2>{% endblock %}
+    {% for article in articles_page.object_list %}
+        <article class="article-list-item">
+            <header>
+                <h2>&#9889;
+                    <a class="article-title" href="{{ SITEURL }}/{{ article.url }}"
+                       rel="bookmark"
+                       title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+                </h2>
+            </header>
+            <p>&#9432;
+                Posted by
+                {% for author in article.authors %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% endfor %}
+                on <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>{% if article.category %}
+        in
+          <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+        </p>
+      {% endif %}
+
+            </p>
+            <section>
+                {{ article.summary }}
+            </section>
+            <footer>
+                {% if article.tags %}
+                    <p class="tags">
+                        Tags:
+                        {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+                    </p>
+                {% endif %}
+            <footer>
+        </article>
+            {% endfor %}
+            {% if articles_page.has_other_pages() %}
+                {% include 'pagination.html' %}
+            {% endif %}
+{% endblock content %}
