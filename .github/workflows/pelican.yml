@@ -12,3 +12,5 @@ jobs:
       id-token: "write"
     with:
       settings: "publishconf.py"
+      theme: "https://github.com/FFX01/FFX01.github.io/tree/main/theme"
+      requirements: "pelican[markdown]"
