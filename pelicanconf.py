@@ -1,7 +1,7 @@
 AUTHOR = 'Justin Walters'
 SITENAME = 'justindev'
 SITEURL = ""
-THEME = "j1"
+THEME = "theme/j1"
 
 PATH = "content"
 
