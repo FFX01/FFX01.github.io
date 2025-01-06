@@ -1,7 +1,7 @@
 Title: Thoughts on AI
 Date: 2025-01-06 11:22
-Category: AI, Thoughts and Ramblings
-Tags: Thoughts
+Category: Thoughts and Ramblings
+Tags: Thoughts, AI, LLM
 Summary My thoughts on AI in the software industry as of January 2025
 Authors: Justin Walters
 Lang: en
