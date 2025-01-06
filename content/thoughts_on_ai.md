@@ -5,7 +5,7 @@ Tags: Thoughts
 Summary My thoughts on AI in the software industry as of January 2025
 Authors: Justin Walters
 Lang: en
-Status: draft
+Status: hidden
 
 I've been messing around with various AI and ML tools for the past year or so. I'm sure anyone who works as a software engineer can attest that pretty much every company in existence wants to stick some sort of AI powered feature into their product these days. It seems to be a bit of a bubble if I'm honest. A new shiny toy has been revealed and if your comapny isn't playing with it, investors don't want anything to do with you.
 
